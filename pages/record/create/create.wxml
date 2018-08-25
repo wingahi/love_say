@@ -1,0 +1,18 @@
+<!--pages/record/create/create.wxml-->
+<form bindsubmit="formSubmit" id='2' bindreset="formReset">  
+<view class="big-logos">  
+  <image bindtap="upimg" wx:if="{{backGroundImg}}" src='{{backGroundImg}}'></image> 
+  <image bindtap="upimg" wx:else src='../../../imgs/mine.png'></image> 
+</view>
+<view class='caigou_centent'>
+对方昵称：<input placeholder="对方的昵称"  name="receiverName" value='{{receiverName}}'/>
+</view>  
+<view class='caigou_centent'>
+输入心语：<textarea class='textarea' maxlength="30" placeholder="想说点什么" name="loveWish" value='{{loveWish}}' />  
+</view>  
+<view class='caigou_centent'>
+我的昵称：<input placeholder="你的昵称"  name="sendName" value='{{sendName}}'/>
+</view> 
+<button class='btn' formType="submit">生成图片</button>  
+<button class='btn'  wx:if="{{afterCreateImg}}" bindtap="previewImg">预览</button>
+</form>

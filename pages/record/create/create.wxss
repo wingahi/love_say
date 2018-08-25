@@ -1,0 +1,4 @@
+/* pages/record/create/create.wxss */
+.textarea{
+  height: 42px
+}

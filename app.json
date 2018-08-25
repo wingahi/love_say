@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/records/record",
+    "pages/record/create/create"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor":"#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首頁",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home.png"
+      },
+      {
+        "pagePath": "pages/record/create/create",
+        "text": "創建",
+        "iconPath": "imgs/upload.png",
+        "selectedIconPath": "imgs/upload.png"
+      }
+    ]
+  }
+}
